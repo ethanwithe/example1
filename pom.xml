@@ -30,6 +30,15 @@
   </dependencies>
   <build>
     <plugins>
+       <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>${maven-surefire-plugin.version}</version>
+  <configuration>
+    <printSummary>true</printSummary>
+    <useFile>false</useFile>
+  </configuration>
+</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
